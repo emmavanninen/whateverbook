@@ -1,5 +1,4 @@
 body {
-  /* width: 99vw; */
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -12,13 +11,17 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(155, 155, 155, 0.774);
+  background-color: rgba(194, 194, 194, 0.774);
+}
+
+h1 {
+  font-family: "mytype";
 }
 
 .stalkers-stats {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 ul {
@@ -57,11 +60,19 @@ li {
 }
 
 .logo img {
-  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .wall {
   padding-top: 20px;
+  background-color: rgb(238, 238, 238);
 }
 
 .photo {
@@ -73,4 +84,41 @@ li {
 
 .photo img {
   width: 300px;
+}
+
+form {
+  height: 200px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 1px;
+}
+
+.add-profile-button {
+  border-radius: 2px;
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.add-profile-button:hover {
+  background-color: rgb(219, 219, 219);
+  border: 1px solid rgb(185, 185, 185);
+}
+
+@font-face {
+  font-family: "gnaabs";
+  src: url("./assets/docktrin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "typetix";
+  src: url("./assets/mytype.ttf") format("truetype");
 }
