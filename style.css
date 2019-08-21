@@ -18,6 +18,11 @@ h1 {
   /* font-family: "gnaabs"; */
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .stalkers-stats {
   display: flex;
   flex-direction: column;
@@ -81,20 +86,46 @@ li {
 }
 
 .wall {
-  padding-top: 20px;
-  background-color: rgb(238, 238, 238);
-}
-
-.photo {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
+  padding-top: 20px;
+  background-color: rgb(238, 238, 238);
+
+}
+
+
+.photo {
+  display: grid;
+  grid-template-columns: 1;
+grid-template-rows: 1;
+  /* align-items: center; */
   padding: 10px;
+}
+
+.photo div {
+  grid-column: 1;
+  grid-row: 1;
+
 }
 
 .photo img {
   width: 300px;
+  -webkit-filter: blur(5px);
 }
+
+#wannastalk-icon {
+  padding-bottom: 20px;
+  padding-left: 20px; 
+  align-self: flex-end;
+
+}
+#wannastalk-icon img{
+  width: 50px;
+  -webkit-filter: blur(0);
+}
+
 
 form {
   height: 300px;

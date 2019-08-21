@@ -84,6 +84,13 @@ li {
   justify-content: space-between;
 }
 
+.info {
+    padding-left: 20px;
+    height: 100px;
+    background-color: rgb(194, 194, 194, 0.774);
+
+}
+
 .wall {
   padding-top: 20px;
   background-color: rgb(238, 238, 238);

@@ -6,6 +6,7 @@ const menuBar = document.querySelector(".menubar");
 const menuLinks = document.querySelector(".links");
 const ul = document.querySelector("ul");
 
+
 const test = [];
 const profiles = [
   {
