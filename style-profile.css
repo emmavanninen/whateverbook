@@ -15,7 +15,9 @@ body {
 }
 
 h1 {
-  /* font-family: "gnaabs"; */
+display: flex;
+justify-content: center;
+align-self: center;
 }
 
 .stalkers-stats {
@@ -70,7 +72,9 @@ li {
 }
 
 .logo img {
-  height: 50px;
+  border-radius: 50%;
+  height: 80px;
+
 }
 
 .logo {
@@ -95,40 +99,3 @@ li {
 .photo img {
   width: 300px;
 }
-
-form {
-  height: 300px;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-form h1 {
-  /* font-family: "gnaabs"; */
-}
-
-input {
-  width: 200px;
-  height: 30px;
-  border: 1px solid black;
-  border-radius: 1px;
-}
-
-.add-profile-button {
-  border-radius: 2px;
-  background-color: rgb(241, 241, 241);
-  border: 1px solid rgb(216, 216, 216);
-}
-
-.add-profile-button:hover {
-  background-color: rgb(219, 219, 219);
-  border: 1px solid rgb(185, 185, 185);
-}
-
-@font-face {
-  font-family: "gnaabs";
-  src: url("./assets/CHECKBK0.TTF") format("truetype");
-}
-

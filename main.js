@@ -2,6 +2,8 @@ const stalkersButton = document.querySelector("#stalkers");
 const stalkersList = document.querySelector(".stalkers-list");
 const stalkingButton = document.querySelector("#stalking");
 const stalkingList = document.querySelector(".stalking-list");
+const menuBar = document.querySelector(".menubar");
+const menuLinks = document.querySelector(".links");
 const ul = document.querySelector("ul");
 
 const test = [];
@@ -91,5 +93,14 @@ function printProfiles() {
   }
 }
 
+
+
+menuBar.addEventListener("click", function () {
+    if (menuLinks.style.display === "inline") {
+        menuLinks.style.display = "none";
+    } else {
+        menuLinks.style.display = "inline";
+    }
+});
 
 
