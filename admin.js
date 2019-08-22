@@ -21,4 +21,6 @@ addProfileButton.addEventListener("click", function() {
   bioInput.value = "";
   photoInput.value = "";
   
+  console.log(profiles);
 });
+

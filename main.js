@@ -1,13 +1,15 @@
 const stalkersButton = document.querySelector("#stalkers");
+console.log(stalkersButton);
 const stalkersList = document.querySelector(".stalkers-list");
 const stalkingButton = document.querySelector("#stalking");
 const stalkingList = document.querySelector(".stalking-list");
 const menuBar = document.querySelector(".menubar");
 const menuLinks = document.querySelector(".links");
 const ul = document.querySelector("ul");
+const stalkButton = document.querySelector("#wannastalk-icon");
+const photo = document.querySelectorAll(".photo img");
 
 
-const test = [];
 const profiles = [
   {
     name: `Stalky Stalkerson`,
@@ -102,6 +104,11 @@ menuBar.addEventListener("click", function () {
     } else {
         menuLinks.style.display = "inline";
     }
+});
+
+
+stalkButton.addEventListener("click", function () {
+  photo.classList.toggle('no-blur');
 });
 
 
