@@ -2,7 +2,7 @@ const profilesData = [
   {
     name: `Stalky Stalkerson`,
     bio: `I wasn't looking..`,
-    photoURL: ``,
+    photoURL: `./assets/profilepic1.jpg`,
     posts: `3`
   },
   {
