@@ -8,62 +8,6 @@ const ul = document.querySelector("ul");
 const stalkButton = document.querySelector("#wannastalk-icon");
 const photo = document.querySelectorAll(".photo img");
 
-// const profiles = [
-//   {
-//     name: `Stalky Stalkerson`,
-//     bio: `I wasn't looking..`,
-//     photoURL: ``,
-//     posts: `3`
-//   },
-//   {
-//     name: `The Ex`,
-//     bio: `I found someone better than you`,
-//     photoURL: ``,
-//     posts: `46`
-//   },
-//   {
-//     name: `Neighbor's doggo`,
-//     bio: `Mlem`,
-//     photoURL: ``,
-//     posts: ``
-//   },
-//   {
-//     name: `New Yorker`,
-//     bio: `Hey I'm walking here!`,
-//     photoURL: ``,
-//     posts: `88`
-//   },
-//   {
-//     name: `Cat`,
-//     bio: `Henlo, you STINKY DOG. go eat bone you UGLY`,
-//     photoURL: ``,
-//     posts: `4`
-//   },
-//   {
-//     name: `Emma`,
-//     bio: `I don't understand coding..`,
-//     photoURL: ``,
-//     posts: `10000`
-//   },
-//   {
-//     name: `That bitch from 7th grade`,
-//     bio: `I'm a drug addict now`,
-//     photoURL: ``,
-//     posts: `99`
-//   },
-//   {
-//     name: `Traveler`,
-//     bio: `It's called Barthelona`,
-//     photoURL: ``,
-//     posts: `98327487236`
-//   },
-//   {
-//     name: `Confused`,
-//     bio: `What`,
-//     photoURL: ``,
-//     posts: ``
-//   }
-// ];
 
 stalkersButton.addEventListener("click", function() {
   if (stalkersList.style.display === "inline") {
@@ -125,11 +69,11 @@ function findTarget (findMatch){
 function openProfile() {
 
 
-  // if (nickname.innerText !== ``){
-  //   profilePic.removeChild();
-  //   nickname.innerText = ``;
-  //   bio.innerText = ``;
-  // }
+  while (profilePic.hasChildNodes()) {
+    profilePic.firstChild.remove();
+    nickname.innerText = ``;
+    bio.innerText = ``;
+  }
 
 
   const img = document.createElement('img');
@@ -149,19 +93,6 @@ function openProfile() {
   }
 
 };
-
-// const nickname = document.querySelector('h2');
-// const bio = document.querySelector('.biography');
-// const profilePic = document.querySelector('.profile-picture');
-
-// const img = document.createElement('img');
-// profilePic.appendChild(img);
-
-// img.src = profilesData[0].photoURL;
-
-// nickname.innerText = profilesData[0].name;
-
-// bio.innerText = 'Bio: ' + profilesData[0].bio;
 
 
 
