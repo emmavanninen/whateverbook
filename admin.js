@@ -16,11 +16,12 @@ addProfileButton.addEventListener("click", function() {
   };
   console.log(newProfileObject);
 
-  profiles.unshift(newProfileObject);
+  profilesData.unshift(newProfileObject);
   usernameInput.value = "";
   bioInput.value = "";
   photoInput.value = "";
   
-  console.log(profiles);
+  localStorage.setItem('profiles', JSON.stringify(profilesData));
+
 });
 
