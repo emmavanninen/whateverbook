@@ -78,7 +78,8 @@ li {
 }
 
 .logo {
-  width: 180px;
+  padding-top: 20px;
+  width: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -86,11 +87,18 @@ li {
 
 .info {
     padding-left: 20px;
-    height: 100px;
     background-color: rgb(194, 194, 194, 0.774);
 
 }
 
+.biography {
+  padding-bottom: 10px;
+}
+
+.my-posts {
+padding-left: 20px;
+
+}
 .wall {
   padding-top: 20px;
   background-color: rgb(238, 238, 238);

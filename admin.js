@@ -21,6 +21,7 @@ addProfileButton.addEventListener("click", function() {
   bioInput.value = "";
   photoInput.value = "";
   
+
   localStorage.setItem('profiles', JSON.stringify(profilesData));
 
 });

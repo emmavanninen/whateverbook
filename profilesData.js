@@ -58,6 +58,8 @@ const profilesData = [
 
 // localStorage.setItem('profiles', JSON.stringify(profiles));
 
+// localStorage.clear('profiles');
+
 let profiles = JSON.parse(localStorage.getItem('profiles')) || profilesData;
 
 
