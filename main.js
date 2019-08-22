@@ -82,13 +82,19 @@ stalkingButton.addEventListener("click", function() {
   }
 });
 
+
 function printProfiles() {
   for (let i = 0; i < profiles.length; i++) {
     const li = document.createElement("li");
     ul.appendChild(li);
     li.innerText = profiles[i].name;
+    li.addEventListener('click', function(){
+      openProfile();
+    });
+    let info = profiles[i];
   }
 }
+
 
 menuBar.addEventListener("click", function() {
   if (menuLinks.style.display === "inline") {
@@ -98,9 +104,69 @@ menuBar.addEventListener("click", function() {
   }
 });
 
+
+const profileWindow = document.querySelector('.profile-window');
+const nickname = document.querySelector('h2');
+const bio = document.querySelector('.biography');
+const profilePic = document.querySelector('.profile-picture');
+
+
+
+function findTarget (findMatch){
+  for (let i = 0; i < profiles.length; i++) {
+    if (profiles[i].name === findMatch.innerText) {
+      const targetProfile = profiles[i];
+      // console.log(targetProfile);
+      return targetProfile;
+    }
+  }
+}
+
+function openProfile() {
+
+
+  // if (nickname.innerText !== ``){
+  //   profilePic.removeChild();
+  //   nickname.innerText = ``;
+  //   bio.innerText = ``;
+  // }
+
+
+  const img = document.createElement('img');
+  profilePic.appendChild(img);
+  let targetProfile = findTarget(event.target);
+
+
+
+  img.src = targetProfile.photoURL;
+  nickname.innerText = targetProfile.name;
+  bio.innerText = 'Bio: ' + targetProfile.bio;
+  
+  if (profileWindow.style.display === "inline") {
+    profileWindow.style.display = "none";
+  } else {
+    profileWindow.style.display = "inline";
+  }
+
+};
+
+// const nickname = document.querySelector('h2');
+// const bio = document.querySelector('.biography');
+// const profilePic = document.querySelector('.profile-picture');
+
+// const img = document.createElement('img');
+// profilePic.appendChild(img);
+
+// img.src = profilesData[0].photoURL;
+
+// nickname.innerText = profilesData[0].name;
+
+// bio.innerText = 'Bio: ' + profilesData[0].bio;
+
+
+
+
+
 // stalkButton.addEventListener("click", function() {
 //   photo.classList.toggle("no-blur");
 // });
-
-
-

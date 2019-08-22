@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  /* font-family: "gnaabs"; */
+  font-family: "gnaabs";
 }
 
 a {
@@ -45,6 +45,7 @@ li {
 }
 
 .stalkers-list {
+  border-radius: 5%;
   width: 150px;
   height: 200px;
   display: none;
@@ -55,6 +56,7 @@ li {
 }
 
 .stalking-list {
+  border-radius: 5%;
   width: 120px;
   height: 200px;
   display: none;
@@ -165,6 +167,28 @@ input {
 
 @font-face {
   font-family: "gnaabs";
-  src: url("./assets/CHECKBK0.TTF") format("truetype");
+  src: url("./assets/Double\ Scratch.ttf") format("truetype");
 }
 
+
+
+.profile-window {
+  border-radius: 5%;
+  width: 300px;
+  height: 300px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid black;
+
+}
+
+.order {
+  /* width: 300px; */
+  height: 100%;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

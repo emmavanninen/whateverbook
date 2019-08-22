@@ -14,21 +14,21 @@ menuBar.addEventListener("click", function () {
 });
 
 
-if (profilesData[0].photoURL !== ``){
+// if (profilesData[0].photoURL !== ``){
 
-const img = document.createElement('img');
-profilePic.appendChild(img);
+// const img = document.createElement('img');
+// profilePic.appendChild(img);
 
-img.src = profilesData[0].photoURL;
-
-
-}
+// img.src = profilesData[0].photoURL;
 
 
+// }
 
 
-username.innerText = profilesData[0].name;
 
-bio.innerText = 'Bio: ' + profilesData[0].bio;
+
+// username.innerText = profilesData[0].name;
+
+// bio.innerText = 'Bio: ' + profilesData[0].bio;
 
 

@@ -1,20 +1,14 @@
 const profilesData = [
   {
-    name: `Stalky Stalkerson`,
-    bio: `I wasn't looking..`,
-    photoURL: `./assets/profilepic1.jpg`,
-    posts: `3`
-  },
-  {
     name: `The Ex`,
     bio: `I found someone better than you`,
-    photoURL: ``,
+      photoURL: `https://freedesignfile.com/upload/2016/03/Lovers-silhouette-with-moon-and-tree-vector-06.jpg`,
     posts: `46`
   },
   {
     name: `Neighbor's doggo`,
     bio: `Mlem`,
-    photoURL: ``,
+    photoURL: `./assets/doggo.jpeg`,
     posts: ``
   },
   {
